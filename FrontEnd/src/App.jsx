@@ -1,15 +1,10 @@
-import {Box} from '@chakra-ui/react'
-
-import Header from './Header/components/Header'
-import Main from './Main/components/Main'
-import Footer from './Footer/components/Footer'
+// Importing Chakra Components
+import {Box, Button} from '@chakra-ui/react'
 
 function App() {
   return (
-    <Box>
-      <Header />
-      <Main />
-      <Footer />
+    <Box width={'100vw'} minHeight={'60vh'}>
+      <Button variant={"main"}>Submit</Button>
     </Box>
   )
 }

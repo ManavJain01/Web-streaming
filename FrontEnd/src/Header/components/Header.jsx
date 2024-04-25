@@ -1,7 +1,8 @@
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 
-import {Box} from '@chakra-ui/react'
+import { Box, Flex } from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
 
 import {
   Breadcrumb,
@@ -12,22 +13,27 @@ import {
 
 function Header(){
   return(
-    <Box>
-      <Breadcrumb spacing='8px' separator={<MdOutlineKeyboardArrowRight color='gray.500' />}>
-        <BreadcrumbItem isCurrentPage>
-          <BreadcrumbLink href='#'>Home</BreadcrumbLink>
-        </BreadcrumbItem>
+    <Flex justifyContent={'center'} alignItems={'center'} bg={'black'} textColor={'white'} width={'100vw'} height={'20vh'}>
+      <Flex justifyContent="space-between" width={'100vw'} mx={'20px'}>
+        <Box fontSize={'2xl'} color={'red'}>
+          Watch Movies
+        </Box>
+        <Breadcrumb spacing='8px' separator={<MdOutlineKeyboardArrowRight color='gray.500' />}>
+          <BreadcrumbItem>
+            <BreadcrumbLink as={Link} to={'Home'}>Home</BreadcrumbLink>
+          </BreadcrumbItem>
 
-        <BreadcrumbItem>
-          <BreadcrumbLink href='#'>Free Movies & TV</BreadcrumbLink>
-        </BreadcrumbItem>
+          <BreadcrumbItem>
+            <BreadcrumbLink as={Link} to={'Movies&TV'}>Free Movies & TV</BreadcrumbLink>
+          </BreadcrumbItem>
 
-        <BreadcrumbItem>
-          <BreadcrumbLink href='#'>Breadcrumb</BreadcrumbLink>
-          <BreadcrumbSeparator />
-        </BreadcrumbItem>
-      </Breadcrumb>
-    </Box>
+          <BreadcrumbItem>
+            <BreadcrumbLink>Categories</BreadcrumbLink>
+            <BreadcrumbSeparator />
+          </BreadcrumbItem>
+        </Breadcrumb>
+      </Flex>
+    </Flex>
   )
 }
 

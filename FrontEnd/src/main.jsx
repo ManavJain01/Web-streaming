@@ -1,16 +1,43 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
+// Importing Chakra Components
 import { ChakraProvider } from '@chakra-ui/react'
 
+// Importing Local Configuration Components
+import Layout from './Layout.jsx'
 import { theme } from './theme/theme.jsx'
 
+// Importing Local Components
+import App from './App.jsx'
+import Movies_TV from './Movies&TV/components/index.jsx'
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    children : [
+      {
+        path: "",
+        element : <App />
+      },
+      {
+        path: "Home",
+        element : <App />
+      },
+      {
+        path: "Movies&TV",
+        element : <Movies_TV />
+      },
+    ]
+  }
+])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
-      <App />
+      <RouterProvider router={router} />
     </ChakraProvider>
   </React.StrictMode>,
 )

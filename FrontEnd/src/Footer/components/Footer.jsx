@@ -2,8 +2,7 @@ import {Box} from '@chakra-ui/react'
 
 function Footer(){
   return(
-    <Box>
-      
+    <Box width={'100vw'} height={'20vh'} bg={'black'} textColor={'white'}>
     </Box>
   )
 }
