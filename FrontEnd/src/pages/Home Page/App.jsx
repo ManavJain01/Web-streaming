@@ -42,7 +42,7 @@ function App() {
 }, []);
 
   return (
-    <div className='min-h-lvh pt-32'>
+    <div className='bg-gradient-to-b from-black min-h-lvh'>
       {
         toggle ? <SearchMovie /> : (
           <>

@@ -5,7 +5,7 @@ import { getId, setOpen } from '../../../redux/movieSlice';
 // Importing local files
 import { TMDB_IMG_URL } from '../../../utils/constant';
 
-export default function MovieCard() {
+export default function MovieCard({posterPath,movieId}) {
   // React Redux
   const dispatch = useDispatch();
 

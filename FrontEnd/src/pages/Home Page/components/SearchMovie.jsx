@@ -40,7 +40,7 @@ export default function SearchMovie() {
   }
 
   return (
-    <>
+    <div className="flex flex-col gap-10">
       <div className='flex justify-center pt-[10%] w-[100%]'>
         <form onSubmit={submitHandler} className='w-[50%]'>
           <div className='flex justify-between shadow-md border-2 p-2 border-gray-200 rounded-lg w-[100%]'>
@@ -49,9 +49,10 @@ export default function SearchMovie() {
           </div>
         </form>
       </div>
-      {
+
+      <div className="text-center">{
         searchedMovie ? ( <MovieList title={movieName} searchMovie={true} movies={searchedMovie}/>) : (<h1>Movie Not Found!!</h1>)
-      }    
-    </>
+      }</div>
+    </div>
   )
 }
