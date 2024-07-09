@@ -6,7 +6,6 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 // Importing Local Components
 import Header from './Header/components/Header'
-import Footer from './Footer/components/Footer'
 import MovieDialog from "./pages/Home Page/components/MovieDialog";
 
 // Importing routing
@@ -30,7 +29,6 @@ function Layout(){
       <Box overflowX={"hidden"}>
         <Header />
         <Outlet />
-        <Footer />
       </Box>
 
       <Toaster/>
