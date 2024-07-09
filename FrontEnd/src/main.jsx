@@ -13,6 +13,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 // Importing Local Configuration Components
 import Layout from './Layout.jsx'
 import { theme } from './theme/theme.jsx'
+import './index.css'
 
 // Importing Local Components
 import Login from './pages/Login/Login.jsx'
