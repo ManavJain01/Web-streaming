@@ -18,7 +18,8 @@ function Header(){
         <Box fontSize={'2xl'} color={'red'}>
           Watch Movies
         </Box>
-        <Breadcrumb spacing='8px' separator={<MdOutlineKeyboardArrowRight color='gray.500' />}>
+        {/* <Breadcrumb spacing='8px' separator={<MdOutlineKeyboardArrowRight color='gray.500' />}> */}
+        <Breadcrumb spacing='8px' separator={" "}>
           <BreadcrumbItem>
             <BreadcrumbLink as={Link} to={'Home'}>Home</BreadcrumbLink>
           </BreadcrumbItem>
@@ -29,6 +30,14 @@ function Header(){
 
           <BreadcrumbItem>
             <BreadcrumbLink>Categories</BreadcrumbLink>
+          </BreadcrumbItem>
+
+          <BreadcrumbItem>
+            <BreadcrumbLink as={Link} to={'Upload'}>Upload</BreadcrumbLink>
+          </BreadcrumbItem>
+
+          <BreadcrumbItem>
+            <BreadcrumbLink>Login/Signup</BreadcrumbLink>
             <BreadcrumbSeparator />
           </BreadcrumbItem>
         </Breadcrumb>

@@ -13,7 +13,7 @@ function Index(){
 
   return(
     <Box width={'100vw'} minHeight={'60vh'} bgColor={'beige'}>
-      <Flex flexFlow={'column'} pt={'20px'} gap={'10px'}>
+      <Flex flexFlow={'column'} pt={'20px'} gap={"20px"}>
         <Flex justifyContent={'space-around'} width={'100vw'}>
           <Button onClick={()=>setDisplayCategory('movies')} bg={'#BE9D6A'} _hover={{bg:"#AC9362"}}>Movies</Button>
           <Button onClick={()=>setDisplayCategory('webseries')} bg={'#BE9D6A'} _hover={{bg:"#AC9362"}}>Webseries</Button>

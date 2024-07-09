@@ -10,7 +10,7 @@ import { Outlet } from 'react-router-dom'
 
 function Layout(){
   return(
-    <Box>
+    <Box overflowX={"hidden"}>
       <Header />
       <Outlet />
       <Footer />

@@ -12,6 +12,7 @@ import { theme } from './theme/theme.jsx'
 // Importing Local Components
 import App from './App.jsx'
 import Movies_TV from './Movies&TV/components/index.jsx'
+import Upload from './Upload/components/Index.jsx'
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "Movies&TV",
         element : <Movies_TV />
+      },
+      {
+        path: "Upload",
+        element : <Upload />
       },
     ]
   }
