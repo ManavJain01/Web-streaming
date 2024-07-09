@@ -56,7 +56,7 @@ function Header(){
   return(
     <div className='absolute left-0 right-0 text-white z-10 bg-gradient-to-b from-black flex gap-5 justify-between px-5'>
       <Box fontSize={'5xl'} color={'red'} fontWeight={'700'} whiteSpace='nowrap'>
-        Watch Movies
+        {import.meta.env.VITE_REACT_APP_Website_Name}
       </Box>
 
       <div className="flex">
