@@ -1,5 +1,4 @@
-export const API_END_POINT = "http://localhost:8080/api/v1/user";
-
+export const API_END_POINT = `${import.meta.env.VITE_REACT_APP_Backend_Server}/api/v1/user`;
 export const options = {
     method: 'GET',
     headers: {
