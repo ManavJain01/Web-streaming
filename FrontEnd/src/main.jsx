@@ -17,9 +17,9 @@ import './index.css'
 
 // Importing Local Components
 import Login from './pages/Login/Login.jsx'
-import App from './App.jsx'
-import Movies_TV from './pages/Movies&TV/components/index.jsx'
-import Upload from './pages/Upload/components/Index.jsx'
+import App from './pages/Home Page/App.jsx'
+import Movies_TV from './pages/Movies&TV/index.jsx'
+import Upload from './pages/Upload/Index.jsx'
 
 const router = createBrowserRouter([
   {

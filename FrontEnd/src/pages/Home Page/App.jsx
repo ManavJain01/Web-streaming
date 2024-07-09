@@ -3,9 +3,9 @@ import {Box, Button} from '@chakra-ui/react'
 
 function App() {
   return (
-    <Box width={'100vw'} minHeight={'60vh'} bgColor={"beige"}>
+    <div className='min-h-lvh pt-32'>
       <Button variant={"main"}>Submit</Button>
-    </Box>
+    </div>
   )
 }
 

@@ -51,7 +51,7 @@ export default function Login() {
                   toast.success(res.data.message);
               }
               dispatch(setUser(res.data.user));
-              navigate("/browse");
+              navigate("/Home");
           } catch (error) {
               toast.error(error.response.data.message);
               console.log(error);

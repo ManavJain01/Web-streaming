@@ -5,14 +5,14 @@ import { Box, Flex, Button } from '@chakra-ui/react'
 import { useState } from 'react'
 
 // Importing Local Components
-import Movies from './Movies'
-import Webseries from './Webseries'
+import Movies from './components/Movies'
+import Webseries from './components/Webseries'
 
 function Index(){
   const [displayCategory, setDisplayCategory] = useState('movies')
 
   return(
-    <Box width={'100vw'} minHeight={'60vh'} bgColor={'beige'}>
+    <Box width={'100vw'} minHeight={'80vh'} bgColor={'beige'} paddingTop='60px'>
       <Flex flexFlow={'column'} pt={'20px'} gap={"20px"}>
         <Flex justifyContent={'space-around'} width={'100vw'}>
           <Button onClick={()=>setDisplayCategory('movies')} bg={'#BE9D6A'} _hover={{bg:"#AC9362"}}>Movies</Button>
